@@ -6,4 +6,4 @@ What does this product provide => Historical and weather data about the city ent
 
 Api used => Wikipedia Api , Openweather Api
 
-Concepts Used => Dom manioulation , Async , Await , Promises and many other Api methods .
+Concepts Used => Dom manipulation , Async , Await , Promises and many other Api methods .
