@@ -10,8 +10,8 @@ form.addEventListener("submit" ,async (event) => {
    const cityData = await fetchCityInfo(cityName);
    const weatherData =await getWeatherData(cityName);
 
-//    console.log(cityData);
-//    console.log(weatherData);
+   console.log(cityData);
+   console.log(weatherData);
 
    displayAllData(cityData,weatherData)
 
@@ -81,7 +81,7 @@ async function fetchCityInfo(city) {
         const lattitude = document.getElementById("lattitude");
         const longitude = document.getElementById("longitude");
 
-        temperature.textContent = `Temperature : ${weatherData.main.temp}`;
+        temperature.textContent = `Temperature : ${weatherData.main.temp}K`;
         humidity.textContent = `Humidity : ${weatherData.main.humidity}`;
         pressure.textContent = `Pressure : ${weatherData.main.pressure}` ;
         seaLevel.textContent = `SeaLevel : ${weatherData.main.sea_level}` ;
